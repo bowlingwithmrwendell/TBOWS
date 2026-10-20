@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Body of Work Studio | Your career is more than a résumé</title>
 <meta name="description" content="The Body of Work Studio turns your experience into a visually illustrated story of who you are, where you've been, and what you're capable of.">
+<meta property="og:title" content="The Body of Work Studio">
+<meta property="og:description" content="Your résumé tells them where you've been. Your Body of Work shows them what you're capable of.">
+<meta property="og:image" content="https://thebodyofworkstudio.com/The%20Body%20of%20Work%20Studio%20Hero%20Banner.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -14,16 +17,17 @@ body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--paper)
 a{color:inherit}
 .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
 header{background:var(--navy);color:#fff}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 24px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .hex{width:44px;height:50px;background:linear-gradient(135deg,var(--gold2),var(--gold) 50%,var(--silver));clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:18px}
 .brand span{font-family:'Playfair Display',serif;letter-spacing:2px;font-size:15px}
 .nav nav a{text-decoration:none;margin-left:24px;font-size:14px;color:var(--silver)}
 .nav nav a:hover{color:var(--gold2)}
-.hero{padding:90px 0 110px;text-align:center}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,6vw,62px);line-height:1.15;margin-bottom:22px}
-.hero h1 em{color:var(--gold2);font-style:normal}
-.hero p{max-width:680px;margin:0 auto 36px;font-size:19px;color:var(--silver)}
+.banner{max-width:1536px;margin:0 auto;aspect-ratio:1536/604;overflow:hidden;border-top:1px solid rgba(201,162,74,.35);border-bottom:1px solid rgba(201,162,74,.35)}
+.banner img{display:block;width:100%;height:auto;margin-top:-7.03%}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.cta{text-align:center;padding:40px 24px 60px}
+.cta p{max-width:680px;margin:0 auto 24px;font-size:18px;color:var(--silver)}
 .btn{display:inline-block;padding:14px 28px;border-radius:6px;font-weight:600;text-decoration:none;margin:6px}
 .btn-gold{background:var(--gold);color:var(--navy)}
 .btn-gold:hover{background:var(--gold2)}
@@ -55,17 +59,18 @@ h2{font-family:'Playfair Display',serif;font-size:36px;text-align:center;margin-
 footer{background:#0a1422;color:var(--silver);padding:40px 0;font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px}
 footer a{color:var(--gold2);text-decoration:none}
-@media(max-width:640px){.nav nav{display:none}.hero{padding:60px 0 80px}}
+@media(max-width:640px){.nav nav{display:none}.cta{padding:28px 18px 44px}}
 </style>
 </head>
 <body>
 <header>
-<div class="wrap nav">
+<div class="nav">
 <a class="brand" href="/"><div class="hex">BW</div><span>THE BODY OF WORK STUDIO</span></a>
 <nav><a href="#dimensions">What It Captures</a><a href="#how">How It Works</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav>
 </div>
-<div class="wrap hero">
-<h1>Your career is more than<br><em>a résumé.</em></h1>
+<div class="banner"><img src="The%20Body%20of%20Work%20Studio%20Hero%20Banner.png" alt="Your résumé tells them where you've been. Your Body of Work shows them what you're capable of." width="1536" height="1024"></div>
+<div class="cta">
+<h1 class="sr">The Body of Work Studio: your career is more than a résumé</h1>
 <p>The Body of Work Studio turns your experience into a visually illustrated story of who you are, where you've been, and what you're capable of.</p>
 <a class="btn btn-gold" href="#pricing">See Pricing</a>
 <a class="btn btn-line" href="mailto:wendell@thebodyofworkstudio.com?subject=Body%20of%20Work%20Conversation">Start a Conversation</a>
