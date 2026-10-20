@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Body of Work Studio | Your career is more than a résumé</title>
+<meta name="description" content="The Body of Work Studio turns your experience into a visually illustrated story of who you are, where you've been, and what you're capable of.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f1b2d;--navy2:#162640;--gold:#c9a24a;--gold2:#e2c27a;--silver:#c0c6cf;--ink:#1d2433;--paper:#f7f5f0;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+header{background:var(--navy);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.hex{width:44px;height:50px;background:linear-gradient(135deg,var(--gold2),var(--gold) 50%,var(--silver));clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:18px}
+.brand span{font-family:'Playfair Display',serif;letter-spacing:2px;font-size:15px}
+.nav nav a{text-decoration:none;margin-left:24px;font-size:14px;color:var(--silver)}
+.nav nav a:hover{color:var(--gold2)}
+.hero{padding:90px 0 110px;text-align:center}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,6vw,62px);line-height:1.15;margin-bottom:22px}
+.hero h1 em{color:var(--gold2);font-style:normal}
+.hero p{max-width:680px;margin:0 auto 36px;font-size:19px;color:var(--silver)}
+.btn{display:inline-block;padding:14px 28px;border-radius:6px;font-weight:600;text-decoration:none;margin:6px}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:var(--gold2)}
+.btn-line{border:1px solid var(--silver);color:#fff}
+.btn-line:hover{border-color:var(--gold2);color:var(--gold2)}
+section{padding:80px 0}
+h2{font-family:'Playfair Display',serif;font-size:36px;text-align:center;margin-bottom:12px;color:var(--navy)}
+.sub{text-align:center;max-width:640px;margin:0 auto 48px;color:#5a6273}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:#fff;border-radius:10px;padding:28px;border-top:4px solid var(--gold);box-shadow:0 4px 18px rgba(15,27,45,.07)}
+.card h3{font-family:'Playfair Display',serif;color:var(--navy);margin-bottom:8px;font-size:21px}
+.steps .card{border-top-color:var(--navy)}
+.num{display:inline-block;width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--gold2);text-align:center;line-height:34px;font-weight:600;margin-bottom:12px}
+.dark{background:var(--navy);color:#fff}
+.dark h2{color:#fff}
+.dark .sub{color:var(--silver)}
+.price{background:var(--navy2);border:1px solid rgba(192,198,207,.25);border-radius:10px;padding:30px;text-align:center}
+.price h3{font-family:'Playfair Display',serif;font-size:22px;margin-bottom:6px}
+.amt{font-size:40px;font-weight:600;color:var(--gold2)}
+.amt small{font-size:15px;color:var(--silver);font-weight:400}
+.price p{color:var(--silver);font-size:15px;margin-top:8px}
+.feature{border-color:var(--gold)}
+.tag{display:inline-block;font-size:12px;letter-spacing:1px;text-transform:uppercase;background:var(--gold);color:var(--navy);padding:3px 10px;border-radius:20px;margin-bottom:10px;font-weight:600}
+.cards-note{text-align:center;margin-top:30px;color:var(--silver)}
+.promise{text-align:center;margin:40px auto 0;max-width:620px;padding:22px;border:1px solid var(--gold);border-radius:10px}
+.promise strong{color:var(--gold2);display:block;font-size:20px;font-family:'Playfair Display',serif;margin-bottom:4px}
+.founding{text-align:center}
+.founding .box{max-width:720px;margin:0 auto;background:#fff;border-radius:12px;padding:44px;border:2px solid var(--gold)}
+footer{background:#0a1422;color:var(--silver);padding:40px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px}
+footer a{color:var(--gold2);text-decoration:none}
+@media(max-width:640px){.nav nav{display:none}.hero{padding:60px 0 80px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<a class="brand" href="/"><div class="hex">BW</div><span>THE BODY OF WORK STUDIO</span></a>
+<nav><a href="#dimensions">What It Captures</a><a href="#how">How It Works</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav>
+</div>
+<div class="wrap hero">
+<h1>Your career is more than<br><em>a résumé.</em></h1>
+<p>The Body of Work Studio turns your experience into a visually illustrated story of who you are, where you've been, and what you're capable of.</p>
+<a class="btn btn-gold" href="#pricing">See Pricing</a>
+<a class="btn btn-line" href="mailto:wendell@thebodyofworkstudio.com?subject=Body%20of%20Work%20Conversation">Start a Conversation</a>
+</div>
+</header>
+
+<section id="dimensions">
+<div class="wrap">
+<h2>What a Body of Work Captures</h2>
+<p class="sub">Four dimensions that tell the full story a résumé leaves out.</p>
+<div class="grid">
+<div class="card"><h3>The Professional Today</h3><p>Your skills, roles, and the value you bring right now.</p></div>
+<div class="card"><h3>The Journey</h3><p>The path, pivots, and turning points that shaped you.</p></div>
+<div class="card"><h3>The Person</h3><p>The values and character behind the work.</p></div>
+<div class="card"><h3>The Impact</h3><p>The results, people, and teams you've moved forward.</p></div>
+</div>
+</div>
+</section>
+
+<section id="how" style="background:#efece4">
+<div class="wrap steps">
+<h2>How It Works</h2>
+<p class="sub">A guided, collaborative process, built around your story.</p>
+<div class="grid">
+<div class="card"><div class="num">1</div><h3>Discovery Conversation</h3><p>We start by learning your story: where you've been and where you're headed.</p></div>
+<div class="card"><div class="num">2</div><h3>Guided Build</h3><p>We shape it together, section by section, across all four dimensions.</p></div>
+<div class="card"><div class="num">3</div><h3>Custom Creative</h3><p>Original illustrations and custom coaching cards. Never templates.</p></div>
+<div class="card"><div class="num">4</div><h3>Delivery</h3><p>A finished Body of Work you can share anywhere: interviews, LinkedIn, and beyond.</p></div>
+</div>
+</div>
+</section>
+
+<section id="pricing" class="dark">
+<div class="wrap">
+<h2>Simple, Transparent Pricing</h2>
+<p class="sub">Choose the level of guidance that fits where you are.</p>
+<div class="grid">
+<div class="price"><h3>Blueprint</h3><div class="amt">$149</div><p>A structured starting point to map your story.</p></div>
+<div class="price feature"><span class="tag">Most Popular</span><h3>Guided Build</h3><div class="amt">$699</div><p>We build your Body of Work together, step by step.</p></div>
+<div class="price"><span class="tag">Founding Rate</span><h3>Signature</h3><div class="amt">$1,500 <small><s>$2,500</s></small></div><p>The full, done-with-you experience with custom creative.</p></div>
+</div>
+<p class="cards-note">Custom coaching cards: <strong style="color:#fff">$95 each</strong> or <strong style="color:#fff">3 for $249</strong>. Every card is original creative work.</p>
+<div class="promise"><strong>No hidden fees.</strong>The price you see is the price you pay.</div>
+</div>
+</section>
+
+<section class="founding">
+<div class="wrap">
+<div class="box">
+<h2>Become a Founding Client</h2>
+<p class="sub" style="margin-bottom:28px">A limited number of founding spots are available at reduced rates. Be one of the first to tell your story the way it deserves to be told.</p>
+<a class="btn btn-gold" href="mailto:wendell@thebodyofworkstudio.com?subject=Founding%20Client%20Inquiry">Claim a Founding Spot</a>
+</div>
+</div>
+</section>
+
+<footer id="contact">
+<div class="wrap">
+<a class="brand" href="/"><div class="hex" style="width:36px;height:41px;font-size:15px">BW</div><span style="color:#fff">THE BODY OF WORK STUDIO</span></a>
+<div><a href="mailto:wendell@thebodyofworkstudio.com">wendell@thebodyofworkstudio.com</a></div>
+<div>&copy; 2026 The Body of Work Studio</div>
+</div>
+</footer>
+</body>
+</html>
