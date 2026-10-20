@@ -56,6 +56,14 @@ h2{font-family:'Playfair Display',serif;font-size:36px;text-align:center;margin-
 .promise strong{color:var(--gold2);display:block;font-size:20px;font-family:'Playfair Display',serif;margin-bottom:4px}
 .founding{text-align:center}
 .founding .box{max-width:720px;margin:0 auto;background:#fff;border-radius:12px;padding:44px;border:2px solid var(--gold)}
+.fprice{font-size:22px;margin-bottom:6px;color:var(--navy)}
+.fprice strong{font-size:34px;color:var(--gold);font-family:'Playfair Display',serif}
+.fprice s{color:#8a90a0;margin-left:6px}
+.counter{max-width:420px;margin:0 auto 28px}
+.ctext{font-weight:600;color:var(--navy);margin-bottom:8px}
+.ctext #spots-left{color:var(--gold);font-size:22px}
+.bar{height:12px;background:#e6e1d4;border-radius:20px;overflow:hidden}
+.fill{height:100%;width:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:20px;transition:width .6s}
 footer{background:#0a1422;color:var(--silver);padding:40px 0;font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px}
 footer a{color:var(--gold2);text-decoration:none}
@@ -110,7 +118,7 @@ footer a{color:var(--gold2);text-decoration:none}
 <div class="grid">
 <div class="price"><h3>Blueprint</h3><div class="amt">$149</div><p>A structured starting point to map your story.</p></div>
 <div class="price feature"><span class="tag">Most Popular</span><h3>Guided Build</h3><div class="amt">$699</div><p>We build your Body of Work together, step by step.</p></div>
-<div class="price"><span class="tag">Founding Rate</span><h3>Signature</h3><div class="amt">$1,500 <small><s>$2,500</s></small></div><p>The full, done-with-you experience with custom creative.</p></div>
+<div class="price"><span class="tag">Founding Rate</span><h3>Signature</h3><div class="amt">$1,200 <small><s>$2,500</s></small></div><p>The full, done-with-you experience with custom creative. Founding rate for the first 10 clients.</p></div>
 </div>
 <p class="cards-note">Custom coaching cards: <strong style="color:#fff">$95 each</strong> or <strong style="color:#fff">3 for $249</strong>. Every card is original creative work.</p>
 <div class="promise"><strong>No hidden fees.</strong>The price you see is the price you pay.</div>
@@ -120,8 +128,14 @@ footer a{color:var(--gold2);text-decoration:none}
 <section class="founding">
 <div class="wrap">
 <div class="box">
+<span class="tag">Founding Client Rate</span>
 <h2>Become a Founding Client</h2>
-<p class="sub" style="margin-bottom:28px">A limited number of founding spots are available at reduced rates. Be one of the first to tell your story the way it deserves to be told.</p>
+<p class="fprice">Signature for <strong>$1,200</strong> <s>$2,500</s></p>
+<p class="sub" style="margin-bottom:24px">Save $1,300. Available to the <strong>first 10 clients</strong> only. Be one of the first to tell your story the way it deserves to be told.</p>
+<div class="counter" id="founding-counter">
+<div class="ctext"><span id="spots-left">10</span> of <span id="spots-total">10</span> founding spots remaining</div>
+<div class="bar"><div class="fill" id="spots-fill"></div></div>
+</div>
 <a class="btn btn-gold" href="mailto:wendell@thebodyofworkstudio.com?subject=Founding%20Client%20Inquiry">Claim a Founding Spot</a>
 </div>
 </div>
@@ -134,5 +148,17 @@ footer a{color:var(--gold2);text-decoration:none}
 <div>&copy; 2026 The Body of Work Studio</div>
 </div>
 </footer>
+<script>
+/* FOUNDING COUNTER: update FOUNDING_CLAIMED each time a founding spot is booked */
+var FOUNDING_TOTAL = 10;
+var FOUNDING_CLAIMED = 0;
+(function(){
+  var left = Math.max(FOUNDING_TOTAL - FOUNDING_CLAIMED, 0);
+  document.getElementById('spots-left').textContent = left;
+  document.getElementById('spots-total').textContent = FOUNDING_TOTAL;
+  document.getElementById('spots-fill').style.width = (left / FOUNDING_TOTAL * 100) + '%';
+  if (left === 0) { document.querySelector('#founding-counter .ctext').textContent = 'All founding spots have been claimed. Thank you!'; }
+})();
+</script>
 </body>
 </html>
